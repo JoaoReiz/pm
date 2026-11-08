@@ -9,6 +9,9 @@ wheels/
 # Virtual environments
 .venv
 
+# Licenças locais contêm credenciais privadas
+*.lic
+
 # Bases geográficas e arquivos locais
 *.gpkg
 *.gpkg-*
@@ -20,3 +23,20 @@ wheels/
 
 # Resultados gerados localmente
 outputs/
+
+# Bases brutas locais. As duas tabelas pequenas de coordenadas auditadas são versionadas.
+data/*
+!data/geocodificacao_aprovada_grandes_municipios.csv
+!data/revisao_coordenadas_grandes_municipios.csv
+
+# Arquivos preservados apenas no computador como histórico
+/src/historico/
+/documentos/versoes/
+/data/inep_complementar_nao_utilizado/
+
+# Materiais de aula e enunciados locais
+/Aula2.pdf
+/Aula_Programacao_Inteira_Modelagem.ipynb
+/Desafios de Programação Inteira — enunciados e respostas.pdf
+/GCC118 – Modelagem de problemas clássicos.pdf
+/GCC118_Enunciado_Trabalho_Pratico.docx.pdf

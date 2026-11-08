@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from pm!")
+"""Funções de apoio ao projeto de programação matemática."""
